@@ -15,9 +15,7 @@ def test_api_key_direct():
     # Read API key directly from file
     try:
         load_dotenv()  # load from .env file
-        api_key = os.getenv("SPLITWISE_API_KEY")
-        # api_key = "Awlo3it6zkXhZVx2ITEJTuh3xsKxd5RirPW1Vk9x"
-        
+        api_key = os.getenv("SPLITWISE_API_KEY")        
         print(f"🔍 Loaded API key: {api_key}")
         
         if not api_key:
