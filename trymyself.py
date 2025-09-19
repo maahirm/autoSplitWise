@@ -10,9 +10,9 @@ friend_data = {
 }
 
 response = requests.get(
-    "https://secure.splitwise.com/api/v3.0/get_expenses",
+    "https://secure.splitwise.com/api/v3.0/get_friends",
     headers={"Authorization": f"Bearer {api_key}"},
-    json=friend_data,
+    # json=friend_data,
     timeout=10
 )
 

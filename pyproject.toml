@@ -1,0 +1,10 @@
+[project]
+name = "splitwise-mcp-server"
+version = "0.1.0"
+description = "splitwise MCP Server"
+requires-python = ">=3.12"
+dependencies = [
+    "fastmcp>=2.10.6",
+    "mcp[cli]>=1.12.1",
+    "requests",
+]
