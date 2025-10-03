@@ -16,7 +16,8 @@ def test_api_key_direct():
     try:
         load_dotenv()  # load from .env file
         api_key = os.getenv("SPLITWISE_API_KEY")        
-        print(f"🔍 Loaded API key: {api_key}")
+        masked_key = f"{api_key[:10]}...{api_key[-4:]}" if api_key else "N/A"
+        print(f"🔍 Loaded API key: {masked_key}")
         
         if not api_key:
             print("❌ No API key found in environment")
