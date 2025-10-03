@@ -6,7 +6,7 @@ This script demonstrates how to use the Splitwise API tester
 and shows what you can expect when testing the APIs.
 """
 
-from testAPIs import SplitwiseAPITester
+from tests.testAPIs import SplitwiseAPITester
 import json
 
 def demo_without_api_key():
