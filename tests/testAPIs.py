@@ -273,7 +273,7 @@ class SplitwiseAPITester:
         if user_response['success'] and user_response.get('status_code') == 200:
             user = user_response['data'].get('user', {})
             name = f"{user.get('first_name', '')} {user.get('last_name', '')}".strip()
-            print(f"   � {name} ({user.get('email', 'N/A')})")
+            print(f"   • {name} ({user.get('email', 'N/A')})")
             print(f"   💰 Currency: {user.get('default_currency', 'N/A')}")
             print(f"   🔔 Notifications: {user.get('notifications_count', 0)}")
         
